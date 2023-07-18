@@ -1,0 +1,293 @@
+/* common shared styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-primary {
+    color: #FD6E0A;
+}
+
+.section-title {
+    color: #181818;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-description {
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+   
+}
+
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+main section {
+    margin-top: 130px;
+}
+
+/* hide */
+.hide{
+    display: none;
+}
+
+/* button related styles */
+.btn-primary {
+    width: 200px;
+    height: 64px;
+    border-radius: 5px;
+    border: 0px;
+    background: #FD6E0A;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 500px;
+    padding: 18px 36px;
+    margin-right: 10px;
+
+}
+
+/* nav related styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-title {
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+    margin-left: 220px;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 51px;
+}
+
+nav a {
+    color: #474747;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+/* header related styles */
+.header {
+    background: #FFF8F3;
+    background-image: url('../images/header_bg.png '), url(../images/developer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+}
+
+.banner {
+    padding: 30px 30px 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-content {
+    width: 585px;
+}
+
+.banner .profile-picture {
+    width: 584px;
+    height: 676px;
+}
+
+.banner-greeting {
+    color: #474747;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-title {
+    color: #181818;
+    font-size: 85px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.banner-description {
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
+/* main related styles */
+
+/* about section related styles  */
+.about {
+    width: 1140px;
+    border-radius: 10px;
+    background: #FFF8F3;
+    margin: 0 auto;
+    padding: 130px 150px;
+    justify-content: center;
+
+}
+
+.about-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-info {
+    text-align: center;
+}
+
+/* what-i-do section related styles */
+#what-i-do-description {
+    padding: 30px 345px;
+
+}
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+}
+
+.skill {
+    padding: 30px;
+
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+/* resume related styles */
+.resume-container {
+    display: flex;
+    gap: 50;
+    
+}
+
+.resume-container {
+    margin: 20px;
+}
+
+.resume-item-institute {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.resume-item-description {
+    color: #757575;
+    font-size: 15px;
+
+}
+
+.download-cv {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* footer related styles */
+footer {
+    display: flex;
+    gap: 115px;
+    background: #FFF8F3;
+    margin-top: 100px;
+    padding: 130px 230px;
+}
+
+.footer-column {
+    width: 50%;
+}
+
+.social-media a {
+    margin-right: 24px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+textarea {
+    display: block;
+    padding: 18px 30px;
+    margin-bottom: 24px;
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 100%;
+    border-radius: 5px;
+    background: #FFF;
+    border: 0;
+}
+
+@media screen and (max-width:576px) {
+    #what-i-do-description{
+        padding: 50px;
+        margin: auto;
+
+    }
+    .header{
+        background-image: none;
+    }
+    nav, .banner, .skills-container, .resume-container, .about-info-container{
+        flex-direction: column;
+    }
+    nav>ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-title{
+        margin: auto;
+    }
+    
+    .about .section-title, .section-description{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+   .btn-primary{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+   }
+    .banner .profile-picture{
+        width: 100%;
+        height: auto;
+    }
+    .banner-content{
+        display:flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .about-info-container{
+        width: 50%;
+        background-size: auto;
+    }
+    footer, .about{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .about{
+        max-width: fit-content;
+        justify-content: center;
+    }
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"],
+.contact input[type="email"],
+textarea{
+width: 80%;
+}
+
+}
